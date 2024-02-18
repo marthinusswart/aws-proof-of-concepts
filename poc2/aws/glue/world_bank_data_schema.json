@@ -1,0 +1,338 @@
+[
+    
+    {
+      "Name": "Country Name",
+      "Type": "string",
+      "Comment": ""
+    },
+    {
+        "Name": "Country Code",
+        "Type": "string",
+        "Comment": ""
+    },
+    {
+        "Name": "Indicator Name",
+        "Type": "string",
+        "Comment": ""
+    },
+    {
+        "Name": "Indicator Code",
+        "Type": "string",
+        "Comment": ""
+    },
+    {
+        "Name": "1960",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1961",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1962",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1963",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1964",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1965",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1966",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1967",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1968",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1969",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1970",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1971",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1972",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1973",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1974",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1975",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1976",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1977",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1978",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1979",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1980",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1981",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1982",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1983",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1984",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1985",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1986",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1987",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1988",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1989",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1990",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1991",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1992",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1993",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1994",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1995",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1996",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1997",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1998",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "1999",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2000",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2001",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2002",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2003",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2004",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2005",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2006",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2007",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2008",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2009",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2010",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2011",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2012",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2013",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2014",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2015",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2016",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2017",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2018",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2019",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2020",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2021",
+        "Type": "decimal",
+        "Comment": ""
+    },
+    {
+        "Name": "2022",
+        "Type": "decimal",
+        "Comment": ""
+    }
+  ]
