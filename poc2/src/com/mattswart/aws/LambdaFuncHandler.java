@@ -10,6 +10,9 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.amazonaws.services.lambda.runtime.events.S3Event;
 import com.amazonaws.services.lambda.runtime.events.models.s3.S3EventNotification.S3EventNotificationRecord;
 
+import com.amazonaws.services.glue.*;
+import com.amazonaws.services.glue.model.*;
+
 public class LambdaFuncHandler implements RequestHandler<S3Event, String> {
     
     @Override
@@ -30,6 +33,9 @@ public class LambdaFuncHandler implements RequestHandler<S3Event, String> {
             logger.log("The uploaded file is a part of the World Bank indicator GC.DOD.TOTL.GD.ZS - " + srcBucket + "/" + srcKey + " of type " + headObject.contentType());            
           }
 
+          StartJobRunResult startJobRunResult  = triggerGlueImportJob();
+          logger.log("Job started: " + startJobRunResult.getJobRunId());
+
           return "Ok";
         } catch (Exception e) {
           throw new RuntimeException(e);
@@ -43,4 +49,11 @@ public class LambdaFuncHandler implements RequestHandler<S3Event, String> {
                 .build();
         return s3Client.headObject(headObjectRequest);
     }        
+
+    private StartJobRunResult triggerGlueImportJob(){
+      AWSGlue awsGlueClient = AWSGlueClient.builder().withRegion("ap-southeast-2").build();
+      StartJobRunRequest jobRunRequest = new StartJobRunRequest();
+      jobRunRequest.setJobName("poc2-world-bank-etl");
+      return awsGlueClient.startJobRun(jobRunRequest);
+    }
 }
