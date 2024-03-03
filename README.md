@@ -9,3 +9,6 @@ https://github.com/marthinusswart/aws-proof-of-concepts/blob/main/doc/PM-AWS%20P
 
 # Proof of Concept 2 PDF
 https://github.com/marthinusswart/aws-proof-of-concepts/blob/main/doc/PM-AWS%20POC%202%20-%20Load%20Government%20Debt%20Total%20%25%20GDP-180224-213213.pdf
+
+# Proof of Concept 3 PDF
+https://github.com/marthinusswart/aws-proof-of-concepts/blob/main/doc/PM-AWS%20POC%203%20-%20Query%20Government%20Debt%20Total%20%25%20GDP%20using%20Athena%20SQL-030324-053428.pdf
