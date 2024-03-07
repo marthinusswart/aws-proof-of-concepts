@@ -1,0 +1,1 @@
+GET http://localhost:9191/gdp/is_running HTTP/1.1
