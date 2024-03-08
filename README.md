@@ -15,3 +15,6 @@ https://github.com/marthinusswart/aws-proof-of-concepts/blob/main/doc/PM-AWS%20P
 
 # Proof of Concept 4 PDF
 https://github.com/marthinusswart/aws-proof-of-concepts/blob/main/doc/PM-AWS%20POC%204%20-%20Load%20Government%20Debt%20Total%20%25%20GDP%20via%20a%20custom%20Python%20Job%20from%20a%20local%20host-030324-053618.pdf
+
+# Proof of Concept 5 PDF
+https://github.com/marthinusswart/aws-proof-of-concepts/blob/main/doc/PM-AWS%20POC%205%20-%20Load%20Government%20Debt%20Total%20%25%20GDP%20via%20Spring%20Boot%20%26%20Kafka-080324-084549.pdf
