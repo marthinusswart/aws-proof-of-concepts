@@ -12,7 +12,11 @@ import com.fasterxml.jackson.databind.exc.MismatchedInputException;
 import com.mattswart.springboot.dto.GDPDetailRecord;
 
 public class SimpleJsonManager {
-    private String jsonFilePath;    
+    private String jsonFilePath;
+    
+    public static Builder builder(){
+        return new Builder();
+    }
 
     public SimpleJsonManager() {
     }

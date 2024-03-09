@@ -54,7 +54,7 @@ public class CountryGDPController {
 	@GetMapping("/process_file")
 	public String processFile(@RequestParam String filepath) {
 		try {
-			var gdpRecordParser = new GDPRecordParser.Builder()
+			var gdpRecordParser = GDPRecordParser.builder()
 					.csvFilePath(filepath)
 					.build();
 			gdpRecordParser.initialiseFile();
@@ -79,7 +79,7 @@ public class CountryGDPController {
 	@GetMapping("/simulate_json_process")
 	public String simulateJsonProcess() {
 		try {
-			var simpleJsonManager = new SimpleJsonManager.Builder()
+			var simpleJsonManager = SimpleJsonManager.builder()
 					.jsonFilePath("/home/matt/gdp_kafka_data.json")
 					.build();
 

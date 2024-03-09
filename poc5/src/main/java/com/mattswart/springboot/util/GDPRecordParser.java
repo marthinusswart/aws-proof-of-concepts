@@ -7,6 +7,10 @@ public class GDPRecordParser {
     private String csvFilePath;
     private SimpleCSVParser simpleCSVParser = new SimpleCSVParser();
 
+    public static Builder builder(){
+        return new Builder();
+    }
+
     public GDPRecordParser() {
     }
 
