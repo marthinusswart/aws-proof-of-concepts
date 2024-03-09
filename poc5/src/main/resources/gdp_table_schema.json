@@ -1,0 +1,182 @@
+[
+    {
+      "Name": "country_name",
+      "Type": "string",
+      "Comment": ""
+    },
+    {
+      "Name": "country_code",
+      "Type": "string",
+      "Comment": ""
+    },
+    {
+      "Name": "indicator_name",
+      "Type": "string",
+      "Comment": ""
+    },
+    {
+      "Name": "indicator_code",
+      "Type": "string",
+      "Comment": ""
+    },
+    {
+      "Name": "1991",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "1992",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "1993",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "1994",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "1995",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "1996",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "1997",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "1998",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "1999",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2000",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2001",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2002",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2003",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2004",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2005",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2006",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2007",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2008",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2009",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2010",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2011",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2012",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2013",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2014",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2015",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2016",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2017",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2018",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2019",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2020",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2021",
+      "Type": "decimal",
+      "Comment": ""
+    },
+    {
+      "Name": "2022",
+      "Type": "decimal",
+      "Comment": ""
+    }
+  ]
