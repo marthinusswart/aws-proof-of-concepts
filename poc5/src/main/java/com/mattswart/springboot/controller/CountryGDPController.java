@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.mattswart.springboot.service.CountryGDPMessagePublisher;
 import com.mattswart.springboot.util.GDPRecordParser;
+import com.mattswart.springboot.util.SimpleJsonManager;
 import com.mattswart.springboot.dto.GDPDetailRecord;
 
 import com.mattswart.springboot.dto.GDPServiceStatus;
@@ -28,25 +29,25 @@ public class CountryGDPController {
 	@GetMapping("/simulate_process_file")
 	public GDPDetailRecord simulateProcessFile() {
 		try {
-			var gdpDetailRecord = new GDPDetailRecord("Australia", "AUS", "GDP", "GDP", "1.0", 
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", 
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", 
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
-			"1.0", "1.0");
+			var gdpDetailRecord = new GDPDetailRecord("Australia", "AUS", "GDP", "GDP", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0");
 			publisher.sendGDPDetailRecordToTopic(gdpDetailRecord);
 			return gdpDetailRecord;
 		} catch (Exception ex) {
-			return new GDPDetailRecord("Failed process", "", "", "GDP", "1.0", 
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", 
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", 
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
-			"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
-			"1.0", "1.0");
+			return new GDPDetailRecord("Failed process", "", "", "GDP", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0");
 		}
 	}
 
@@ -75,4 +76,28 @@ public class CountryGDPController {
 		}
 	}
 
+	@GetMapping("/simulate_json_process")
+	public String simulateJsonProcess() {
+		try {
+			var simpleJsonManager = new SimpleJsonManager.Builder()
+					.jsonFilePath("/home/matt/gdp_kafka_data.json")
+					.build();
+
+			var gdpDetailRecord = new GDPDetailRecord("Australia", "AUS", "GDP", "GDP", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0",
+					"1.0", "1.0");
+
+			simpleJsonManager.append(gdpDetailRecord);
+
+		} catch (Exception ex) {
+			return ex.toString();
+		}
+
+		return "Success";
+	}
 }

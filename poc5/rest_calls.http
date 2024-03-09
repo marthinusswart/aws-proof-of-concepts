@@ -3,3 +3,5 @@ GET http://localhost:9191/gdp/is_running HTTP/1.1
 GET http://localhost:9191/gdp/simulate_process_file HTTP/1.1
 
 GET http://localhost:9191/gdp/process_file?filepath=/home/matt/API_GC.DOD.TOTL.GD.ZS_DS2_en_csv_v2_509-formatted.csv HTTP/1.1
+
+GET http://localhost:9191/gdp/simulate_json_process HTTP/1.1
