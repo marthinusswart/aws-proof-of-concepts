@@ -1,6 +1,8 @@
 package com.mattswart.springboot.util;
 
 import java.io.File;
+import java.nio.file.Paths;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +34,15 @@ public class SimpleJsonManager {
         
         if (!jsonFile.exists()) {            
             jsonFile.createNewFile();
-        }  
+        } else if ((jsonFile.length() / 1000) > 50) {
+            var path = Paths.get(jsonFilePath);
+            var parentPath = path.getParent() ;
+            var filename = path.getFileName() + "." + LocalDateTime.now() + ".json";
+            filename = parentPath + "/" + filename;
+            var archiveFile = new File(filename);
+            jsonFile.renameTo(archiveFile);
+            jsonFile.createNewFile();
+        } 
 
         List<GDPDetailRecord> gdpDetailRecords = null;
 

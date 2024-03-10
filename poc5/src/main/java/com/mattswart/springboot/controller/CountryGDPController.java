@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mattswart.springboot.service.CountryGDPMessagePublisher;
+import com.mattswart.springboot.service.CountryGDPMessageSubscriber;
 import com.mattswart.springboot.util.GDPRecordParser;
 import com.mattswart.springboot.util.SimpleJsonManager;
 import com.mattswart.springboot.dto.GDPDetailRecord;
@@ -20,6 +21,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class CountryGDPController {
 	@Autowired
 	private CountryGDPMessagePublisher publisher;
+
+	@Autowired
+	private CountryGDPMessageSubscriber subscriber;
 
 	@GetMapping("/is_running")
 	public GDPServiceStatus serviceStatus() {
@@ -63,7 +67,7 @@ public class CountryGDPController {
 			while (hasMoreRecords) {
 				var gdpDetailRecord = gdpRecordParser.nextRecord();
 				if (gdpDetailRecord != null) {
-					System.out.println(gdpDetailRecord);
+					//System.out.println(gdpDetailRecord);
 					publisher.sendGDPDetailRecordToTopic(gdpDetailRecord);
 				} else {
 					hasMoreRecords = false;
@@ -99,5 +103,5 @@ public class CountryGDPController {
 		}
 
 		return "Success";
-	}
+	}	
 }

@@ -19,8 +19,8 @@ public class CountryGDPMessagePublisher {
             CompletableFuture<SendResult<String, Object>> future = template.send("gdp_detail_record", gdpDetailRecord);
             future.whenComplete((result, ex) -> {
                 if (ex == null) {
-                    System.out.println("Sent message=[" + gdpDetailRecord.toString() +
-                            "] with offset=[" + result.getRecordMetadata().offset() + "]");
+                    //System.out.println("Sent message=[" + gdpDetailRecord.toString() +
+                    //        "] with offset=[" + result.getRecordMetadata().offset() + "]");                    
                 } else {
                     System.out.println("Unable to send message=[" +
                     gdpDetailRecord.toString() + "] due to : " + ex.getMessage());
